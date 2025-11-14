@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>BlocNotes</title>
+    <script src="blocnotes3.js"></script>
+    <script src="blocnotes_stockage.js"></script>
+    <link rel="stylesheet" href="blocnotes.css">
+  </head> 
+  <body>
+    <script>
+      window.onload=init;
+    </script>
+
+    <form>
+      <input type="text" id="entreenote" size="40" placeholder="Note">
+      <input type="button" id="ajouter" value="Ajouter une note"
+onclick="gestionClicBouton();">
+    </form>
+	
+	 <ul id="listenotes">
+    </ul> 
+  </body>
+</html>

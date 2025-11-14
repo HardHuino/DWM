@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Color Change</title>
+		<script src="code.js"></script>
+	</head>
+	<body>
+		<h1 id="titre">Logo Polytech Paris Saclay</h1>
+		<div id="entry1">
+  		<p id="test">En <span id="red">rouge</span> ou en <span id="blue">bleu</span> ...</p>
+  		<img id="polytech" src="images/logo_pops.png">
+  		<script>
+  		  document.getElementById("red").onmouseover = function() {mouseOver(1)};
+  		  document.getElementById("blue").onmouseover = function() {mouseOver(0)};
+  		</script>
+  	</div>
+	</body>
+</html>
