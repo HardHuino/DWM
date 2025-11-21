@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire méthode GET</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form method="get" action="traitement.php">
+            Enregistrement d'un utilisateur<br />
+            Nom<input type="text" name="nom" /><br />
+            Prénom<input type="text" name="pre" /><br />
+            Sexe<br />
+            Masculin: <input type="radio" name="sex" value="M" /><br />
+            Féminin: <input type="radio" name="sex" value="F" /><br />
+            Année de naissance: <br />
+            <select name="annee_naissance">
+                <option selected>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+            </select>
+            <input type="submit" value="Envoyer" />
+        </form>
+    </body>
+</html>

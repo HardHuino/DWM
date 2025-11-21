@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset = "utf-8"/>
+    <title>Menu déroulant vertical</title>
+    <link href="menuVertical.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <dl id="menu">
+            <div class="accordion-item">
+                <dt class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <a href="#">Menu 1</a>
+                </dt>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"></div>
+            </div>
+        
+            <div class="accordion-item">
+                <dt class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                    Menu 2
+                </dt>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                    <dd id="smenu2">
+                        <ul class="accordion-body">
+                            <li><a href="#">Sous-Menu 2.1</a></li>
+                            <li><a href="#">Sous-Menu 2.2</a></li>
+                            <li><a href="#">Sous-Menu 2.3</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+        
+            <div class="accordion-item">
+                <dt class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="#flush-collapseThree">
+                    Menu 3
+                </dt>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"></div>
+            </div>
+
+            <div class="accordion-item">
+                <dt class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="true" aria-controls="flush-collapseFour">
+                    Menu 4
+                </dt>
+                <div id="flush-collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                    <dd id="smenu4">
+                        <ul class="accordion-body" id='Four'>
+                            <li><a href="#">Sous-Menu 4.1</a></li>
+                            <li><a href="#">Sous-Menu 4.2</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+        
+        </dl>
+    </div>
+
+    <!-- <div class="accordion" id="menu">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                Menu 1 
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Menu 2
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Menu 3
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Menu 4
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        
+    </div> -->
+      
+      
+      
+      
+    <!-- <dl id="menu">
+      <dt onClick="closemenu();"><a href="#" >Menu 1 </a></dt>
+      <dt onClick="managemenu('smenu2');">Menu 2</dt>
+      <dd id="smenu2">
+        <ul>
+          <li><a href="#">Sous-Menu 2.1</a></li>
+          <li><a href="#">Sous-Menu 2.2</a></li>
+          <li><a href="#">Sous-Menu 2.3</a></li>
+        </ul>
+      </dd>
+      <dt onClick="closemenu();">Menu 3</dt>
+      <dt onClick="managemenu('smenu4');">Menu 4</dt>
+      <dd id="smenu4">
+        <ul>
+          <li><a href="#">Sous-Menu 4.1</a></li>
+          <li><a href="#">Sous-Menu 4.1</a></li>
+        </ul>
+      </dd>
+    </dl> -->
+    <!-- <script>
+    function closemenu() {
+      const submenus = document.querySelectorAll('dd');
+        submenus.forEach(function(menu) {
+          menu.style.display = 'none';
+      });
+    }
+    function managemenu(id) {
+      if (document.getElementById(id).style.display == 'block' ) {
+        closemenu();
+      } else {
+        closemenu();
+        document.getElementById(id).style.display = 'block';
+      }
+    }
+    </script> -->
+  </body>
+</html>

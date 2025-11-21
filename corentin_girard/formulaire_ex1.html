@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire méthode GET</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form method="get" action="traitement.php">
+            Enregistrement d'un utilisateur<br />
+            Nom<input type="text" name="nom" /><br />
+            Prénom<input type="text" name="pre" /><br />
+            Sexe<br />
+            Masculin: <input type="radio" name="sex" value="M" /><br />
+            Féminin: <input type="radio" name="sex" value="F" /><br />
+            Commentaires<br />
+            <textarea rows="2" name="com">...</textarea><br />
+            <input type="submit" value="Envoyer" />
+        </form>
+    </body>
+</html>
+
+<!-- 
+Q2 : Balise permettant de creer le formulaire : <form>,
+    Attribut permettant de différencier les objets du formulaire : "name"
+    Nom des informations transmises par le formulaire : "nom", "pre", "sex", "com"
+    Le formulaire designe le script auquel sont destinées les données via l'attribut "action" de la balise <form>, ici le script est "traitement.php"
+Q3 : file:///C:/Users/Public/Documents/UwAmp/www/corentin_girard/traitement.php?nom=girard&pre=corentin&sex=M&com=test
+    Noms et valeurs des variables : nom=girard, pre=corentin, sex=M, com=test 
+-->
