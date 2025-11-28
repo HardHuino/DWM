@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire méthode POST</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form method="post" action="traitement.php">
+            Enregistrement d'un utilisateur<br />
+            Nom<input type="text" name="nom" /><br />
+            Prénom<input type="text" name="pre" /><br />
+            Sexe<br />
+            Masculin: <input type="radio" name="sex" value="M" /><br />
+            Féminin: <input type="radio" name="sex" value="F" /><br />
+            Commentaires<br />
+            <textarea rows="2" name="com">...</textarea><br />
+            <input type="submit" value="Envoyer" />
+        </form>
+    </body>
+</html>
+
+<!-- 
+Q5 et Q6 : Ce formulaire utilise la méthode POST au lieu de GET,
+    par conséquent les données sont non visible dans l'URL
+Q7 : POST est donc plus sécurisé que GET 
+-->

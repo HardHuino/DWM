@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset = "utf-8"/>
+    <title>Menu déroulant vertical</title>
+    <link href="menuVertical.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <dl id="menu">
+      <dt onClick="closemenu();"><a href="#" >Menu 1 </a></dt>
+      <dt onClick="managemenu('smenu2');">Menu 2</dt>
+      <dd id="smenu2">
+        <ul>
+          <li><a href="#">Sous-Menu 2.1</a></li>
+          <li><a href="#">Sous-Menu 2.2</a></li>
+          <li><a href="#">Sous-Menu 2.3</a></li>
+        </ul>
+      </dd>
+      <dt onClick="closemenu();">Menu 3</dt>
+      <dt onClick="managemenu('smenu4');">Menu 4</dt>
+      <dd id="smenu4">
+        <ul>
+          <li><a href="#">Sous-Menu 4.1</a></li>
+          <li><a href="#">Sous-Menu 4.1</a></li>
+        </ul>
+      </dd>
+    </dl>
+    <script>
+    function closemenu() {
+      const submenus = document.querySelectorAll('dd');
+        submenus.forEach(function(menu) {
+          menu.style.display = 'none';
+      });
+    }
+    function managemenu(id) {
+      if (document.getElementById(id).style.display == 'block' ) {
+        closemenu();
+      } else {
+        closemenu();
+        document.getElementById(id).style.display = 'block';
+      }
+    }
+    </script>
+  </body>
+</html>
