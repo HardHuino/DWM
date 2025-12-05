@@ -1,0 +1,20 @@
+* Question 1 :
+Ajout du titre avec balie h1, des boutons radio avec <input type="radio">,
+des differents textes avec la balise paragraphe <p>, du tableau avec balise <table>
+et finalement des bouton avec les balise <button>, qui pour l'instant ne fonctionnent pas, comme les boutons radio
+* Question 2 :
+2.1 modification des differentes balises, nottament la classe <button> dont l'on definit l'attribut color et background-color
+on change le background-color de la balise body avec un gradient et on change background-attachment pour que ça remplisse toute la page
+finalement on change la balise <td> des cellules du tableau pour qu'elles ne soient pas opaque et qu'il y ait des bordures blanches
+style du body dans l'inspecteur montré dans body_style_inspecteur.PNG dans Q0
+2.2 creation de 2 div, le premier div a une taille fixé et cette meme taille est reporté sur les 2 divs enfant, de plus on utilise grid-area pour superposer.
+* Question 3 :
+3.1 on créée la fonction assign_cell_listeners qui pour tout element du tableau récupéré avec document.querySelector('table'), on ajoute un addEventListener sur les click
+et dès qu'on click on va changer l'opacité de la case a 0, effacant le nombre en même temps
+3.2 de plus on augmente le nombre de case ouverte de 1 a chaque clique sur une case
+3.3 on recupere l'image avec son id (img dans mon cas car j'ai qu'une image) et avec des splits on recupere uniquement le nom du fichier sans son extension
+on recupere aussi sur quel bouton on a cliqué car on le passe en paramtre lors du onClick dans le HTML
+ensuite on compare et si les 2 strings sont pareil on affiche : "Gagné!"
+Image de ce resultat dans la console dans console_inspecteur.PNG dans Q0
+* Question 4 :
+/

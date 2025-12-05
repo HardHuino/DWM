@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="animal-style.css">
+        <title>Deviner l'animal</title>
+    </head>
+    <body>
+        <h1>Deviner l'animal</h1>
+        <p>Le but est de deviner l'animal. Avec quelle taille de  plateau voulez-vous jouer?</p>
+        <input type="radio" name="grid_width" value="2*2" /> 2*2
+        <input type="radio" name="grid_width" value="4*4" /> 4*4
+        <input type="radio" name="grid_width" value="10*10" /> 10*10 <br />
+        <div id="grid-container">
+            <img id="img"src="../img/Dolphin.jpg" alt="dauphin">
+            <div id="grid-overlay">
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p>Cells opened:</p>
+        <p>Time elapsed:</p>
+        <p>L'animale est ...</p>
+        <button>Lion</button>
+        <button>Tiger</button>
+        <button>Dolphin</button> <br />
+        <button>Restart</button>
+    </body>
+</html>
